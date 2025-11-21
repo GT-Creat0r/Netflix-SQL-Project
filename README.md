@@ -186,8 +186,7 @@ ORDER BY 2 DESC
 LIMIT 10;
 ```
 
-### 15. Categorize the Content Based on the Presence of 'kill' and 'violence' Keywords in the description field.
- Label content containing these keywords as 'Bad Content' and all other content as 'Good Content'. Count how many items fall into each category.
+### 15. Categorize the Content Based on the Presence of 'kill' and 'violence' Keywords in the description field. Label content containing these keywords as 'Bad Content' and all other content as 'Good Content'. Count how many items fall into each category.
 **Objective:** Categorize content as 'Bad Content' if it contains 'kill' or 'violence' and 'Good Content' otherwise. Count the number of items in each category.
 ```sql
 WITH label_category AS(
