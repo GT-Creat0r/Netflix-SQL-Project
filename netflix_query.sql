@@ -78,7 +78,7 @@ SELECT *
 FROM netflix
 WHERE date_added::DATE >= CURRENT_DATE - INTERVAL '5 years';  -- can also use the TO_DATE(date_added,'Month DD, YYYY')
 
--- -- just for learning puropse
+-- -- just for learning purpose
 -- SELECT TO_DATE(date_added,'MONTH DD, YYYY')  -- 'Month DD, YYYY' must be in the same format as present in the table.
 -- FROM netflix;
 
@@ -167,5 +167,6 @@ SELECT  category,
 		COUNT(*)
 FROM label_category
 GROUP BY category;
+
 
 
